@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Gaming Survey Form</h1>
+      <p id="description">This is a short survey about gaming. It will take you approximately 3 mins to fill it out. Thank you for participating!</p>
+    </header>
+    <main>
+      <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div class="info-block">
+            <label for="name" id="name-label">Enter your first name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="info-block">
+            <label for="email" id="email-label">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+          </div>
+          <div class="info-block">
+            <label for="age" id="number-label">Enter your age:</label>
+            <input type="number" name="age" id="number" min="5" max="120" placeholder="13"/>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Some gaming stats</legend>
+          <div class="info-block multiple-choice-block">
+            <label for="hours-played">How many hours a week do you play?</label>
+            <div class="info-block--radio">
+              <input id="0" type="radio" name="hours-played" value="0"><label class="radio-buttons" for="0">0</label>
+            </div>
+            <div class="info-block--radio">
+              <input id="1" type="radio" name="hours-played" value="1"><label class="radio-buttons" for="1">1-2</label>
+            </div>
+            <div class="info-block--radio">
+              <input id="2" type="radio" name="hours-played" value="2"><label class="radio-buttons" for="2">3-5</label>
+            </div>
+            <div class="info-block--radio">
+              <input id="3" type="radio" name="hours-played" value="3"><label class="radio-buttons" for="3">6-10</label>
+            </div>
+            <div class="info-block--radio">
+              <input id="4" type="radio" name="hours-played" value="4"><label class="radio-buttons" for="4">10+</label>
+            </div>
+          </div>
+          <div class="info-block multiple-choice-block">
+            <label for="platforms">What platforms do you play on?</label>
+            <div class="info-block--checkbox">
+              <input id="pc" type="checkbox" name="platforms" value="0"><label for="pc">PC</label>
+            </div>
+            <div class="info-block--checkbox">
+              <input id="console" type="checkbox" name="platforms" value="1"><label for="console">Console</label>
+            </div>
+            <div class="info-block--checkbox">
+              <input id="mobile" type="checkbox" name="platforms" value="2"/><label for="mobile">Mobile</label>
+            </div>
+            <div class="info-block--checkbox">
+              <input id="other" type="checkbox" name="platforms" value="3"><label for="Other">Other: <input id="other-content" type="text" max="20" name=""/></label>
+            </div>
+          </div>
+          <div class="info-block">
+            <label for="favourite-genre">What is your favourite computer games genre?</label>
+            <p style="text-align: center; font-size: 12px; color: #00C8A1; font-weight: bold;">You must select only one.</p>
+            <select name="favourite-genre" id="dropdown" required>
+              <option value="">Select one...</option>
+              <option value="1">RPG</option>
+              <option value="2">FPS</option>
+              <option value="3">Survival</option>
+              <option value="4">Platform</option>
+              <option value="5">Battle Royale</option>
+              <option value="6">Simulation</option>
+              <option value="7">Sports</option>
+              <option value="8">Strategy (RTS)</option>
+              <option value="9">MMO</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your opinion</legend>
+          <div class="info-block">
+            <label for="your-opinion">What do you think the future of gaming will look like?</label>
+            <textarea placeholder="What do you think?" id="your-opinion" name="your-opinion"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit" id="submit" >Submit</button>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p style="text-align: center; font-size: 12px;">© 2022 Szymon Markiewicz for freeCodeCamp</p>
+  </footer>
+</html>

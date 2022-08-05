@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  color: #F8EBFF;
+  margin: 20px;
+}
+h1, p{
+  text-align: center;
+}
+#title{
+  border: 5px solid #00C8A1;
+  color: #F8EBFF;
+  padding: 0 10px;
+  margin: auto;
+  width: fit-content;
+  border-radius: 10px;
+}
+#description{
+  margin: auto;
+  max-width: 500px;
+  padding: 20px 0 40px 0;
+}
+label{
+  display: block;
+  padding: 5px;
+  margin: 0 10px;
+  text-align: center;
+}
+input{
+  display: block;
+  margin: auto;
+}
+fieldset{
+  border: 5px solid #00C8A1;
+  color: #00C8A1;
+  font-weight: bold;
+  max-width: 700px;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+}
+.info-block{
+  padding: 5px 5px 10px 5px;
+  color: #F8EBFF;
+  font-weight: normal;
+  font-size: 18px;
+  margin: auto;
+  vertical-align: middle;
+}
+.info-block:nth-of-type(2){
+  background-color: #AB9ACF;
+}
+body{
+  background-color: #775EC2;
+  font-family: 'Poppins', sans-serif;
+}
+.info-block--radio, .info-block--checkbox{
+  display: inline-block;
+  font-size: 16px;
+}
+label[for="other"], input[id="other-content"]{
+  display: inline-block;
+  vertical-align: middle;
+}
+input[id="other-content"]{
+  margin-left: 5px;
+}
+input[type="text"], input[type="email"]{
+  width: 60%;
+  max-width: 300px;
+  min-width: 150px;
+}
+#your-opinion{
+  width: 100%;
+  min-width: 150px;
+  min-height: 80px;
+  max-height: 500px;
+  margin: auto;
+  display: block;
+}
+select[name="favourite-genre"]{
+  display: block;
+  margin: auto;
+  width: 30%;
+  min-width: 150px;
+}
+.multiple-choice-block{
+  margin: auto;
+  text-align: center;
+}
+#submit{
+  padding: 10px;
+  display: block;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #F8EBFF;
+  border-radius: 10px;
+  background-color: #00C8A1;
+  border: none;
+  transition: 0.5s ease-out;
+  box-shadow: 2px 2px 0 #F8EBFF;
+}
+#submit:hover{
+  letter-spacing: 2pt;
+  cursor: auto;
+}
