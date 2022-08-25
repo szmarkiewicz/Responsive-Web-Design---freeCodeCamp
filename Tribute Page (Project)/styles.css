@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #E8EFFF;
+}
+#header{
+  text-align: center;
+}
+sup{
+  display: inline-block;
+}
+#title{
+  font-size: 40pt;
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 10px;
+}
+#img-div{
+  margin: 30px auto;
+  width: 80%;
+  min-width: 300px;
+  max-width: 1000px;
+  text-align: center;
+  border-radius: 10px;
+}
+#image{
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px #1E82FF;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-caption{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 10pt;
+  font-style: italic;
+  font-weight: bold;
+}
+h2{
+  font-style: italic;
+  margin-top: -5px;
+}
+li::before, #title, h3{
+  text-shadow: 1px 1px 1px #000;
+  color: #1E82FF;
+}
+h3{
+  text-align: center;
+  font-size: 16pt;
+}
+li{
+  display: flex;
+  font-size: 12pt;
+  padding: 10px;
+  align-self: flex-start;
+  align-items: center;
+  list-style: none;
+  text-align: justify;
+  max-width: 400px;
+  margin: 0;
+}
+li::before{
+  content: "▶";
+  font-size: 20pt;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+#footnote::before{
+  content: "▶";
+  font-size: 12pt;
+  margin: 0 4px 0 0;
+}
+ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-flow: column nowrap;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+li:nth-of-type(2n){
+  align-self: flex-end;
+}
+#footnote{
+  font-size: 8pt;
+  text-align: center;
+}
+#learn-more{
+  text-align: center;
+  padding: 15px;
+}
+#learn-more a{
+  text-decoration: none;
+  color: #ABB8EF;
+  transition: all 0.6s ease-in-out;
+}
+#learn-more a:hover{
+  color: #1E82FF;
+}
